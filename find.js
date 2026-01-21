@@ -7,17 +7,17 @@ const run = async () => {
       console.log("Database object not found!!");
     }
 
-    const gradesCollection = db.collection("grades");
-    // const profileCollection = db.collection("profile");
+    // const gradesCollection = db.collection("grades");
+    const profileCollection = db.collection("profile");
 
-    const query = {
-      scores: {
-        $elemMatch: { type: "quiz", score: { $gte: 90 } },
-      },
-    };
-    // const option = { projection: { name: 1, age: 1, _id: 0 } };
+    const query = {};
+    const option = {};
 
-    const cursor = gradesCollection.find(query);
+    const cursor = profileCollection
+      .find(query)
+      .sort({ age: -1 })
+      .limit(3)
+      .project({ name: 1, age: 1, _id: 0 });
     const result = await cursor.toArray();
     console.log(result);
   } catch (error) {
