@@ -1,0 +1,25 @@
+{
+  "name": "mongodb-nodejs-mastery",
+  "version": "1.0.0",
+  "description": "A comprehensive guide and practical implementation of CRUD operations, Transactions, and Query Modification using MongoDB Node.js Driver. Following MongoDB University curriculum.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vishalrathod8788/mongodb-nodejs-mastery.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Vishalrathod8788/mongodb-nodejs-mastery/issues"
+  },
+  "homepage": "https://github.com/Vishalrathod8788/mongodb-nodejs-mastery#readme",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "mongodb": "^7.0.0"
+  }
+}
